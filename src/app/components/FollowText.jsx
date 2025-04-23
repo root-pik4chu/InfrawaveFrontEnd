@@ -25,7 +25,7 @@ const FollowText = ({ text = "I'm floating ✨", className = '', floatClass = 'b
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className={`relative w-full h-[400px] bg-neutral-900 rounded-xl overflow-hidden bottom-[5vw] ${className}`}
+      className={`relative w-full h-[400px] bg-zinc-50 rounded-xl overflow-hidden bottom-[5vw] ${className}`}
     >
       <AnimatePresence>
         {show && (

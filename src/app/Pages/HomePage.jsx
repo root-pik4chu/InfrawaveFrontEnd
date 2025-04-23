@@ -65,15 +65,15 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="w-[100%] h-[205vh] bg-zinc-900">
+      <div className="w-[100%] h-[205vh] ">
         <div className="w-full h-full overflow-hidden">
           {/* Top section */}
-          <div className="w-full h-[65vh] flex items-start justify-start p-[2vw] flex-col">
+          <div className="w-full h-[65vh] flex items-start justify-end p-[2vw] flex-col">
           <ScrollGradientText
         texts={['big ideas, smart strategies',' endless creativity to ', 'supercharge your brand!', 'right?']}
         className="items-start"
       />
-      <p className="w-[50%] leading-none text-xl" style={{color: 'rgba(182, 182, 182)',}}>Infrawave Solutions empowers businesses with cutting-edge digital services, offering web and mobile app development, AI/ML solutions, blockchain integration, and innovative technology for seamless digital transformation.</p>
+      {/* <p className="w-[50%] leading-none text-xl font-[smallHeading]" style={{color: 'rgba(182, 182, 182)',}}>Infrawave Solutions empowers businesses with cutting-edge digital services, offering web and mobile app development, AI/ML solutions, blockchain integration, and innovative technology for seamless digital transformation.</p> */}
           </div>
           
           {/* Animation section */}

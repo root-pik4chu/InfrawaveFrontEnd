@@ -65,7 +65,7 @@ export default function FlipCardsGrid() {
             onClick={() => handleFlip(index)}
           >
             <div
-              className={`relative w-full h-full bg-zinc-100 transition-transform duration-700 ease-in-out preserve-3d ${
+              className={`relative w-full h-full transition-transform duration-700 ease-in-out preserve-3d ${
                 flippedCards[index] ? "rotate-y-180" : ""
               } `}
             >

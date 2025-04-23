@@ -7,7 +7,7 @@ const ScrollGradientText = ({ texts = [], className = '' }) => {
   const containerRef = useRef(null);
 
   return (
-    <div ref={containerRef} className={`flex flex-col ${className} font-[heading]`}>
+    <div ref={containerRef} className={`flex flex-col ${className} font-[Heading] leading-none`}>
       {texts.map((text, i) => (
         <AnimatedGradientText key={i} text={text} index={i} />
       ))}
@@ -29,12 +29,12 @@ const AnimatedGradientText = ({ text, index }) => {
       ref={ref}
       style={{
         backgroundSize,
-        backgroundImage: 'linear-gradient(to right, #b6b6b6, #b6b6b6)',
+        backgroundImage: 'linear-gradient(to right, #0f0f0f, #0f0f0f)',
         WebkitBackgroundClip: 'text',
         backgroundClip: 'text',
-        color: 'rgba(182, 182, 182, 0.2)',
+        color: 'rgba(0,0,0, 0.5)',
       }}
-      className="text-[3.2vw]  bg-no-repeat text-transparent transition-[background-size] duration-50 ease-[cubic-bezier(0.1,0.5,0.5,1)] leading-none
+      className="text-[3.5vw]  bg-no-repeat text-transparent transition-[background-size] duration-50 ease-[cubic-bezier(0.1,0.5,0.5,1)] leading-none
       "
     >
       {text}

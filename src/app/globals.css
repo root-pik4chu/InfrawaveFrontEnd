@@ -4,3 +4,8 @@
    font-family: heading;
    src: url("./font/DIRTYLINE\ 36DAYSOFTYPE\ 2022.OTF");
 }
+@font-face {
+   font-family: smallHeading;
+   src: url("./font/SPACEGROTESK-VARIABLEFONT_WGHT.TTF");
+}
+

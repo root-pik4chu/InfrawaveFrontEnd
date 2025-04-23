@@ -43,11 +43,11 @@ const FiveProjectSlider = () => {
 
   return (
     <div>
-      <div className="w-full h-[250vh] bg-zinc-950">
+      <div className="w-full h-[250vh]">
         <div className="w-full h-[20vh]"></div>
         
         {/* Container that gets pinned */}
-        <div ref={containerRef} className="w-full h-[80vh] bg-zinc-950 overflow-hidden">
+        <div ref={containerRef} className="w-full h-[80vh] overflow-hidden">
           
           {/* Row of projects that moves horizontally */}
           <div

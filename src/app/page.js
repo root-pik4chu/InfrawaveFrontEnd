@@ -14,6 +14,8 @@ import Container  from './Pages/Container';
 import NewCardContainer from './myCodeSideCardStack/NewCardContainer';
 import Text from './Pages/Text';
 import FollowText from './components/FollowText';
+import IntroAnimation from './Pages/IntroAnimation';
+import ClickSpark from './spark/ClickSpark';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -42,18 +44,34 @@ export default function Home() {
   }, []); // Empty dependency array means this runs once on mount
 
   return (
-    <div className="w-full bg-zinc-950 text-white">
+    <div className="w-full bg-zinc-50 text-white">
       {/* <h1>Hello World</h1> */}
      
       {/* <StackingCard /> */}
-      <div className="w-full h-screen bg-zinc-950"></div>
       {/* <NewCardContainer /> */}
-      <FollowText />
+
+      {/* <IntroAnimation /> */}
+
+
+      <ClickSpark
+  sparkColor='#000'
+  sparkSize={15}
+  sparkRadius={25}
+  sparkCount={8}
+  duration={500}
+>
+
+  {/* <div className="w-full h-screen bg-zinc-950"></div> */}
+
+      <HomePage />
+  <FollowText />
       <Text />
       <Container />
-      <HomePage />
       <FiveProjectSlider />
       <FlipCardsGrid />
+</ClickSpark>
+
+   
      
 
     </div>
