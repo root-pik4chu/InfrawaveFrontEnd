@@ -1,0 +1,45 @@
+'use client';
+
+import { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+
+const ScrollGradientText = ({ texts = [], className = '' }) => {
+  const containerRef = useRef(null);
+
+  return (
+    <div ref={containerRef} className={`flex flex-col ${className} font-[heading]`}>
+      {texts.map((text, i) => (
+        <AnimatedGradientText key={i} text={text} index={i} />
+      ))}
+    </div>
+  );
+};
+
+const AnimatedGradientText = ({ text, index }) => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start 0.8', 'start 0.5'],
+  });
+
+  const backgroundSize = useTransform(scrollYProgress, [0, 1], ['0% 100%', '100% 100%']);
+
+  return (
+    <motion.h1
+      ref={ref}
+      style={{
+        backgroundSize,
+        backgroundImage: 'linear-gradient(to right, #b6b6b6, #b6b6b6)',
+        WebkitBackgroundClip: 'text',
+        backgroundClip: 'text',
+        color: 'rgba(182, 182, 182, 0.2)',
+      }}
+      className="text-[3.2vw]  bg-no-repeat text-transparent transition-[background-size] duration-50 ease-[cubic-bezier(0.1,0.5,0.5,1)] leading-none
+      "
+    >
+      {text}
+    </motion.h1>
+  );
+};
+
+export default ScrollGradientText;
