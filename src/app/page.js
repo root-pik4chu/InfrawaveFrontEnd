@@ -16,6 +16,7 @@ import Text from './Pages/Text';
 import FollowText from './components/FollowText';
 import IntroAnimation from './Pages/IntroAnimation';
 import ClickSpark from './spark/ClickSpark';
+import NavBar from './components/NavBar';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -44,7 +45,7 @@ export default function Home() {
   }, []); // Empty dependency array means this runs once on mount
 
   return (
-    <div className="w-full bg-zinc-50 text-white">
+    <div className="w-full bg-zinc-50 text-zinc-800">
       {/* <h1>Hello World</h1> */}
      
       {/* <StackingCard /> */}
@@ -55,14 +56,14 @@ export default function Home() {
 
       <ClickSpark
   sparkColor='#000'
-  sparkSize={15}
+  sparkSize={15}  
   sparkRadius={25}
   sparkCount={8}
   duration={500}
 >
 
   {/* <div className="w-full h-screen bg-zinc-950"></div> */}
-
+      <NavBar />
       <HomePage />
   {/* <FollowText />
       <Text />

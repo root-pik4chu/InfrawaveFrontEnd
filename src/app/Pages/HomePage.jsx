@@ -61,10 +61,10 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="w-[100%] h-[250vh] bg-zinc-50 text-zinc-800">
+      <div className="w-[100%] h-[250vh] bg-zinc-50 ">
         <div className="w-full h-full overflow-hidden">
           {/* Top section */}
-          <div className="w-full h-[85vh] ">
+          <div className="w-full h-[85vh]">
             {/* <div className="w-full h-full flex items-srart justify-between p-[2vw] flex-col  pt-[10vw]">
             <div className="">
               <h1 className="text-[2.2vw]">
@@ -84,16 +84,25 @@ const HomePage = () => {
             </div> */}
             <div className="w-full h-full flex items-srart justify-between p-[2vw] flex-col  pt-[22vw] ">
               <div className="w-full ">
-                <h1 className="text-[5.2vw] w-[50%] leading-none">
-                We turn customer data into{" "}
+                <h1 className="text-[5.2vw] w-[50%] leading-none font-[Heading]  ">
+                we turn customer data into{" "}
                 <span className="text-blue-500">margin</span>
               </h1>
               </div>
-              <div className="w-full flex items-center justify-between">
-              <button className="bg-zinc-200 w-fit px-[2vw] py-[1vw]">
+              <div className="w-full flex items-end justify-between ">
+              {/* <button className="bg-zinc-200 w-fit px-[2vw] py-[1vw] rounded-full">
                 Work with Us
-              </button>
-              <p className="w-[30%] leading-none mb-[2vw]">We turn data into profit, plain and simple. Our approach pinpoints the crucial identifiers of growth, deploys robust collection, processing, and storage infrastructure, and transforms your data into a tangible, profitable product.</p>
+              </button> */}
+              <div className="flex gap-[0.5vw]">
+              <button className="px-[3vw] py-[1vw]  bg-black text-white text-[0.9vw] rounded-md font-semibold hover:bg-black/[0.8] hover:shadow-lg">
+              Work with Us
+</button>
+<button className="px-[3vw] py-[1vw] text-black backdrop-blur-sm border border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2] text-[0.9vw] transition duration-200">
+  Portfolio
+</button>
+              </div>
+
+              <p className="w-[30%] leading-none text-[0.9vw]">We turn data into profit, plain and simple. Our approach pinpoints the crucial identifiers of growth, deploys robust collection, processing, and storage infrastructure, and transforms your data into a tangible, profitable product.</p>
 
               </div>
             </div>
@@ -118,7 +127,7 @@ const HomePage = () => {
             <div className="w-full h-full  sticky flex items-center justify-between">
               <div className="relative w-full h-full flex">
                 <div ref={firstBox} className="w-1/3 h-full  absolute p-[1vw] ">
-                  <div className="w-full h-full bg-red-500 rounded-4xl"></div>
+                  <div className="w-full h-full bg-zinc-900 rounded-4xl"></div>
                 </div>
                 <div className="video h-full w-full object-cover p-[1vw] ">
                   <video
@@ -139,7 +148,7 @@ const HomePage = () => {
                   className="w-1/3 h-full  absolute right-0 p-[1vw] flex"
                 >
                   {/* <div className="w-[2vw] h-full bg-yellow-400 z-20"></div> */}
-                  <div className="w-full h-full rounded-4xl bg-red-500 "></div>
+                  <div className="w-full h-full rounded-4xl bg-zinc-900 "></div>
                 </div>
               </div>
             </div>
