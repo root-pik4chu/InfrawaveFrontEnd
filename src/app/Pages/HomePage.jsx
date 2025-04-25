@@ -65,7 +65,7 @@ const HomePage = () => {
         <div className="w-full h-full overflow-hidden">
           {/* Top section */}
           <div className="w-full h-[85vh] ">
-            <div className="w-full h-full flex items-srart justify-between p-[2vw] flex-col  pt-[10vw]">
+            {/* <div className="w-full h-full flex items-srart justify-between p-[2vw] flex-col  pt-[10vw]">
             <div className="">
               <h1 className="text-[2.2vw]">
                 We turn customer data into{" "}
@@ -81,8 +81,8 @@ const HomePage = () => {
                 Work with Us
               </button>
             </div>
-            </div>
-            {/* <div className="w-full h-full flex items-srart justify-between p-[2vw] flex-col  pt-[22vw] ">
+            </div> */}
+            <div className="w-full h-full flex items-srart justify-between p-[2vw] flex-col  pt-[22vw] ">
               <div className="w-full ">
                 <h1 className="text-[5.2vw] w-[50%] leading-none">
                 We turn customer data into{" "}
@@ -96,7 +96,7 @@ const HomePage = () => {
               <p className="w-[30%] leading-none mb-[2vw]">We turn data into profit, plain and simple. Our approach pinpoints the crucial identifiers of growth, deploys robust collection, processing, and storage infrastructure, and transforms your data into a tangible, profitable product.</p>
 
               </div>
-            </div> */}
+            </div>
               {/* <h1>Precise Approach to your product</h1> */}
               {/* <p className="w-[40%] leading-none mb-[2vw]">We turn data into profit, plain and simple. Our approach pinpoints the crucial identifiers of growth, deploys robust collection, processing, and storage infrastructure, and transforms your data into a tangible, profitable product.</p> */}
 
