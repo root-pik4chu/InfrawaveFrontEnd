@@ -82,9 +82,9 @@ const HomePage = () => {
               </button>
             </div>
             </div> */}
-            <div className="w-full h-full flex items-srart justify-between p-[2vw] flex-col  pt-[22vw] ">
+            <div className="w-full h-full flex items-srart justify-between flex-col  pt-[22vw] ">
               <div className="w-full ">
-                <h1 className="text-[5.2vw] w-[50%] leading-none font-[Heading]  ">
+                <h1 className=" w-[50%] leading-none font-[Heading]  ">
                 we turn customer data into{" "}
                 <span className="text-blue-500">margin</span>
               </h1>
@@ -102,7 +102,7 @@ const HomePage = () => {
 </button>
               </div>
 
-              <p className="w-[30%] leading-none text-[0.9vw]">We turn data into profit, plain and simple. Our approach pinpoints the crucial identifiers of growth, deploys robust collection, processing, and storage infrastructure, and transforms your data into a tangible, profitable product.</p>
+              <p className="w-[30%] leading-none  font-[smallHeading]">We turn data into profit, plain and simple. Our approach pinpoints the crucial identifiers of growth, deploys robust collection, processing, and storage infrastructure, and transforms your data into a tangible, profitable product.</p>
 
               </div>
             </div>
@@ -134,7 +134,7 @@ const HomePage = () => {
                     autoPlay
                     loop
                     muted
-                    playsInline
+                    // playsInline
                     className="w-full h-full object-cover rounded-4xl"
                   >
                     <source

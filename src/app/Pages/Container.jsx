@@ -14,8 +14,9 @@ export default function Container() {
   });
   
   return (
-    <main className="relative w-full">
-      <div ref={container} className="min-h-[100vh]">
+    <main className="relative w-full h-[270vh]">
+      
+      <div ref={container} className="">
         {projects.map((project, i) => {
           // Adjust the scale calculation for smoother transition
           const targetScale = 1 - ((projects.length - i) * 0.01);

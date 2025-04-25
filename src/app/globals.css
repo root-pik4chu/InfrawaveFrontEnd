@@ -12,3 +12,24 @@
 h1,button,p{
    z-index: 11;
 }
+
+h1{
+   font-size: 5.2vw;
+   font-family: heading;
+}
+h3{
+   font-family: smallHeading;
+   font-size: 5.2vw;
+}
+h4{
+   font-family: smallHeading;
+   font-size: 1.2vw;
+}
+h2{
+   font-family: heading;
+   font-size: 3vw;
+}
+p{
+   font-family: smallHeading;
+   font-size: 0.9vw;
+}

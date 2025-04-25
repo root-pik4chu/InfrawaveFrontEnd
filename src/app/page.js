@@ -17,6 +17,9 @@ import FollowText from "./components/FollowText";
 import IntroAnimation from "./Pages/IntroAnimation";
 import ClickSpark from "./spark/ClickSpark";
 import NavBar from "./components/NavBar";
+import ScrollVelocity from "./Pages/ScrollVelocity";
+import { motion } from "framer-motion";
+import About from "./Pages/About";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -60,22 +63,43 @@ export default function Home() {
 
       {/* <IntroAnimation /> */}
 
-      <ClickSpark
-        sparkColor="#000"
+
+
+
+      
+      <ClickSpark sparkColor="#000"
         sparkSize={15}
         sparkRadius={25}
         sparkCount={8}
-        duration={500}
-      >
-        {/* <div className="w-full h-screen bg-zinc-950"></div> */}
-        <NavBar />
+        duration={500}>
+
+      <NavBar />
+
+     <div className="px-[1vw]">
+        
         <HomePage />
-        {/* <FollowText />
-      <Text />
+        {/* <ScrollVelocity
+          texts={["React Bits", "Scroll Down"]}
+          velocity={20}
+          className="custom-scroll-text"
+        /> */}
+        <About />
+
+     </div>
+
+
+
+
+
+        {/* <FollowText /> */}
+      {/* <Text /> */}
+      
       <Container />
-      <FiveProjectSlider />
-      <FlipCardsGrid /> */}
-      </ClickSpark>
+      {/* <FiveProjectSlider /> */}
+      {/* <FlipCardsGrid /> */}
+        </ClickSpark>
+        <div className="w-full h-screen bg-zinc-950"></div>
+
     </div>
   );
 }

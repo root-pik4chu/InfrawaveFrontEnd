@@ -1,26 +1,66 @@
-export const projects = [
-   {
+// export const projects = [
+//    {
      
-     color: "#BBACAF"
-   },
-   {
+//      color: "#111111"
+//    },
+//    {
      
-     color: "#977F6D"
-   },
-   {
+//     color: "#111111"
+//   },
+ 
+//   {
      
-     color: "#C2491D"
-   },
-   {
+//     color: "#111111"
+//   },
+ 
+//   {
      
-     color: "#BBACAF"
-   },
-   {
+//     color: "#111111"
+//   },
+ 
+//   {
      
-     color: "#977F6D"
-   },
-   {
+//     color: "#111111"
+//   },
+ 
+//   {
      
-     color: "#C2491D"
-   },
- ]
+//     color: "#111111"
+//   },
+ 
+  
+//  ]
+
+
+
+
+
+
+
+
+ export const projects = [
+  {
+    
+    color: "#111111"
+  },
+  {
+    
+    color: "#222222"
+  },
+  {
+    
+    color: "#333333"
+  },
+  {
+    
+    color: "#444444"
+  },
+  {
+    
+    color: "#555555"
+  },
+  {
+    
+    color: "#666666"
+  },
+]

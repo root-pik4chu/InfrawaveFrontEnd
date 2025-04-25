@@ -53,9 +53,9 @@ export default function FlipCardsGrid() {
 
   return (
     <div className="p-6 min-h-screen max-w-7xl  mx-auto flex justify-center flex-col">
-      <h1 className="text-3xl mb-8 lg:w-[30%] sm:w-full">
+      <h2 className="text-3xl mb-8 lg:w-[50%] sm:w-full">
         faq it up! your curiosity meets our expertise—let’s clear things up!
-      </h1>
+      </h2>
 
       <div className="  lg:w-[70%] sm:w-full h-[screen] lg:left-[30%] relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
         {cardData.map((card, index) => (
@@ -78,7 +78,7 @@ export default function FlipCardsGrid() {
               "
               >
                 {/* card content */}
-                <h1 className="text-black text-2xl">{card.question}</h1>
+                <p className="text-black text-2xl">{card.question}</p>
               </Card>
 
               {/* Back of Card */}
@@ -86,7 +86,7 @@ export default function FlipCardsGrid() {
                 className="absolute w-full h-full backface-hidden p-6  bg-zinc-100 rotate-y-180 
                shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
               >
-                <h1 className="text-black ">{card.answer}</h1>
+                <p className="text-black ">{card.answer}</p>
               </Card>
             </div>
           </div>
