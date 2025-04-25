@@ -3,7 +3,7 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-const ScrollGradientText = ({ texts = [], className = '' }) => {
+const ScrollGradientText = ({ texts = [], className = 'text-center' }) => {
   const containerRef = useRef(null);
 
   return (
@@ -33,8 +33,9 @@ const AnimatedGradientText = ({ text, index }) => {
         WebkitBackgroundClip: 'text',
         backgroundClip: 'text',
         color: 'rgba(0,0,0, 0.5)',
+        textAlign:"center"
       }}
-      className="text-[3.5vw]  bg-no-repeat text-transparent transition-[background-size] duration-50 ease-[cubic-bezier(0.1,0.5,0.5,1)] leading-none
+      className="text-[4vw]  bg-no-repeat text-transparent transition-[background-size] duration-50 ease-[cubic-bezier(0.1,0.5,0.5,1)] leading-none text-center
       "
     >
       {text}

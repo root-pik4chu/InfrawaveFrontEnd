@@ -27,7 +27,7 @@ export default function Home() {
       smoothWheel: true,
       smoothTouch: false, 
       wheelMultiplier: 1.3, 
-      touchMultiplier: 2.0,
+      touchMultiplier: 1.5,
     });
 
     lenis.on('scroll', ScrollTrigger.update);
@@ -64,11 +64,13 @@ export default function Home() {
   {/* <div className="w-full h-screen bg-zinc-950"></div> */}
 
       <HomePage />
-  <FollowText />
+  {/* <FollowText />
       <Text />
       <Container />
       <FiveProjectSlider />
-      <FlipCardsGrid />
+      <FlipCardsGrid /> */}
+
+
 </ClickSpark>
 
    
