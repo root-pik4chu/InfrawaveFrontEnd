@@ -9,3 +9,6 @@
    src: url("./font/SPACEGROTESK-VARIABLEFONT_WGHT.TTF");
 }
 
+h1,button,p{
+   z-index: 11;
+}

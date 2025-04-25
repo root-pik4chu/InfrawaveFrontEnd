@@ -122,7 +122,7 @@ const HomePage = () => {
           {/* Animation section */}
           <div
             ref={box}
-            className="relative w-full h-[100vh] flex items-center justify-center"
+            className="relative w-full h-[100vh] flex items-center justify-center z-20"
           >
             <div className="w-full h-full  sticky flex items-center justify-between">
               <div className="relative w-full h-full flex">
