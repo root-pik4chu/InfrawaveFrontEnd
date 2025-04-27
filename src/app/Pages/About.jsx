@@ -3,9 +3,9 @@ import React from 'react';
 const About = () => {
   return (
     <div>
-      <div className="w-full h-[80vh] relative text-black ">
+      <div className="w-full h-[110vh] relative text-black ">
         <div className="w-full h-full relative ">
-          <h2 className=" w-[80%] h-[40vh] leading-none ">
+          <h2 className=" w-[80%] h-[40vh] leading-none pt-[5vw]">
             building brands, boosting businesses, and redefining possibilities. let’s
             grow your brand together.
           </h2>

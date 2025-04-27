@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ScrollGradientText from "../components/ScrollGradientText";
+import Lines from "../components/Lines";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -18,7 +19,7 @@ const HomePage = () => {
     const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: box.current,
-        start: "top 0%", // Start animation when section top reaches 20% from viewport top
+        start: "top 10%", // Start animation when section top reaches 20% from viewport top
         end: "+=300", // End animation after scrolling 300px
         scrub: 1, // Smoother scrubbing with slight delay
         // markers: true,       // Keep markers for debugging (remove in production)
@@ -62,6 +63,8 @@ const HomePage = () => {
   return (
     <div>
       <div className="w-[100%] h-[250vh] bg-zinc-50 ">
+      <Lines />
+
         <div className="w-full h-full overflow-hidden">
           {/* Top section */}
           <div className="w-full h-[85vh]">
@@ -122,7 +125,7 @@ const HomePage = () => {
           {/* Animation section */}
           <div
             ref={box}
-            className="relative w-full h-[100vh] flex items-center justify-center z-20"
+            className="relative w-full h-[100vh] flex items-center justify-center z-20 mt-[2vw]"
           >
             <div className="w-full h-full  sticky flex items-center justify-between">
               <div className="relative w-full h-full flex">

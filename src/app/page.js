@@ -20,6 +20,7 @@ import NavBar from "./components/NavBar";
 import ScrollVelocity from "./Pages/ScrollVelocity";
 import { motion } from "framer-motion";
 import About from "./Pages/About";
+import WhyUsPage from "./Pages/WhyUsPage";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -47,15 +48,6 @@ export default function Home() {
 
   return (
     <div className="w-full bg-zinc-50 text-zinc-800">
-      <div className="fixed top-0 left-0 w-full h-full z-10 pointer-events-none px-[1vw]">
-        <div className="flex w-full h-full justify-between ">
-          {Array(6)
-            .fill(0)
-            .map((_, i) => (
-              <div key={i} className="w-px bg-black/20 h-full" />
-            ))}
-        </div>
-      </div>
       {/* <h1>Hello World</h1> */}
 
       {/* <StackingCard /> */}
@@ -63,43 +55,37 @@ export default function Home() {
 
       {/* <IntroAnimation /> */}
 
-
-
-
-      
-      <ClickSpark sparkColor="#000"
+      <ClickSpark
+        sparkColor="#000"
         sparkSize={15}
         sparkRadius={25}
         sparkCount={8}
-        duration={500}>
+        duration={500}
+      >
+        <NavBar />
+        <div className="w-full h-screen bg-zinc-950"></div>
 
-      <NavBar />
-
-     <div className="px-[1vw]">
-        
-        <HomePage />
-        {/* <ScrollVelocity
+        <div className="px-[1vw]">
+          <HomePage />
+          {/* <ScrollVelocity
           texts={["React Bits", "Scroll Down"]}
           velocity={20}
           className="custom-scroll-text"
         /> */}
-        <About />
+          <FiveProjectSlider />
 
-     </div>
+          <About />
+        </div>
 
+        <FollowText />
+        {/* <Text /> */}
 
+        <Container />
+        <FlipCardsGrid />
+        <WhyUsPage />
 
-
-
-        {/* <FollowText /> */}
-      {/* <Text /> */}
-      
-      <Container />
-      {/* <FiveProjectSlider /> */}
-      {/* <FlipCardsGrid /> */}
-        </ClickSpark>
-        <div className="w-full h-screen bg-zinc-950"></div>
-
+      </ClickSpark>
+      <div className="w-full h-screen bg-zinc-950"></div>
     </div>
   );
 }

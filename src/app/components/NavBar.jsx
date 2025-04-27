@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const NavBar = () => {
   return (
-    <div className="fixed top-0 h-[10vh] w-full  bg-zinc-50 z-[5] px-[1vw]">
+    <div className="fixed top-0 h-[10vh] w-full  bg-zinc-50 px-[1vw] z-[999999999]">
       <div className="w-full h-full grid grid-cols-5 items-center">
         <div className="flex justify-start">
           <Image src="/Group_57.svg" alt="Infrawave Logo" width={120} height={30} />
